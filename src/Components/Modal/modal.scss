@@ -1,0 +1,53 @@
+.modal__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 1rem;
+    backdrop-filter: blur(.26rem);
+    background: rgba(0,0,0, .4);
+}
+
+.modal__wrapper.open {
+    height: 100%;
+    display: flex;
+}
+
+.modal__wrapper.close {
+    height: 0;
+    display: none;
+}
+
+.modal__body {    
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1.2rem;
+    overflow-y: scroll;
+    border-radius: 1rem;
+    background: white;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {//на случай если текста будет много в модалке 
+        width: 0;
+        background: transparent;
+    }
+
+    h2 {
+        margin: 0;
+        text-align: left;
+        width: 100%;
+    }
+}
+
+.modal__close {
+    margin-top: -1rem;
+    text-align: right;
+    font-size: 2rem;
+    cursor: pointer;
+    color: gray;
+}

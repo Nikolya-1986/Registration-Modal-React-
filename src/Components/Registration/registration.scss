@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    form {
+        border: .2rem solid turquoise;
+        border-radius: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+
+        li {
+            font-size: 1.25rem;
+            text-align: left;
+        }
+    }
+}
+
+///////////////////Media
+@media(max-width: 420px){
+    .container {
+
+        form {
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .error, .form-control {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

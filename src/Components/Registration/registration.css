@@ -1,0 +1,38 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.container form {
+  border: .2rem solid turquoise;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.container ul {
+  padding: 0;
+  list-style: none;
+}
+
+.container ul li {
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+@media (max-width: 420px) {
+  .container form h1 {
+    font-size: 1.6rem;
+  }
+  .container form .error, .container form .form-control {
+    font-size: 0.9rem;
+  }
+}
+/*# sourceMappingURL=registration.css.map */
